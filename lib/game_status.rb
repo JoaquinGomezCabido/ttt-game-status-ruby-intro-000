@@ -49,4 +49,6 @@ def over?(board)
 end
 
 def winner(board)
-  return board()
+  cells = won?(board)
+  return board(cells[0])
+end
