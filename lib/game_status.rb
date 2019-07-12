@@ -21,7 +21,10 @@ def won?(board)
     winning_cell_1 = array[0]
     winning_cell_2 = array[1]
     winning_cell_3 = array[2]
-    if(board[winning_cell_1] == board(winning_cell_2) && board(winning_cell_2) == board(winning_cell_3))
+    check_1 = board[winning_cell_1]
+    check_2 = board[winning_cell_2]
+    check_3 = board[winning_cell_3]
+    if(check_1 == check_2 && check_2 == check_3)
       return array
   end
   return false
