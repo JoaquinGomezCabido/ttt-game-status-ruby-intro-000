@@ -23,11 +23,8 @@ def won?(board)
     winning_cell_3 = array[2]
     if(board[winning_cell_1] == board(winning_cell_2) && board(winning_cell_2) == board(winning_cell_3))
       return array
-    else
-      
-    end
   end
-  return nil
+  return false
 end
 
 def full?(board)
