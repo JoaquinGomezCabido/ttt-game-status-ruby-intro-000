@@ -18,12 +18,14 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |array|
-    if (board[array[0]] == board[array[1]] && board[array[1]] == board[array[2]])
+    winning_cell_1 = array[0]
+    winning_cell_2 = array[1]
+    winning_cell_3 = array[2]
+    if(board[winning_cell_1] == board(winning_cell_2) && board(winning_cell_2) == board(winning_cell_3))
       return array
-    else
-      return falsey
     end
   end
+  return nil
 end
 
 def full?(board)
