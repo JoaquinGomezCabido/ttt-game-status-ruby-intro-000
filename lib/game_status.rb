@@ -15,3 +15,12 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |array|
+    if (board["#{array[0]}"] == board["#{array[1]}"] && board["#{array[1]}"] == board["#{array[2]}"])
+      return array
+    end
+  end
+end
+
