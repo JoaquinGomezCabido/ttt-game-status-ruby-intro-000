@@ -29,3 +29,13 @@ def full?(board)
     cell == "X" || cell = "O"
   end
 end
+
+def draw?(board)
+  if full?(board)
+    if(!won?(board))
+      return true
+    end
+  else
+    return false
+  end
+end
