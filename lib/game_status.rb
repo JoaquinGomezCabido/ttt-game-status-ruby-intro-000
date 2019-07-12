@@ -34,9 +34,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |cell|
+  check = board.all? do |cell|
     cell == "X" || cell = "O"
   end
+  return check
 end
 
 def draw?(board)
