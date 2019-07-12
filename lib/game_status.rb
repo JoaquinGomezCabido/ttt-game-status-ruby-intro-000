@@ -35,7 +35,7 @@ end
 
 def full?(board)
   check = board.all? do |cell|
-    cell == "X" || cell = "O"
+    cell != " "
   end
   return check
 end
