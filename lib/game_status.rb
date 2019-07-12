@@ -63,5 +63,5 @@ def winner(board)
     cells = won?(board)
     return board[cells[0]]
   end
-  return false
+  return nil
 end
