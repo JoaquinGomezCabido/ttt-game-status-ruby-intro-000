@@ -26,7 +26,7 @@ def won?(board)
     check_3 = board[winning_cell_3]
     if(check_1 == check_2 && check_2 == check_3)
       return array
-  end
+    end
   return false
 end
 
