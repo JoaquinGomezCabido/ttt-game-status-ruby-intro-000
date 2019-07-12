@@ -28,7 +28,7 @@ end
 
 def full?(board)
   board.all? do |cell|
-    (cell == "X" || cell = "O")
+    cell == "X" || cell = "O"
   end
 end
 
