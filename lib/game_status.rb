@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |array|
-    if (board["#{array[0]}"] == board["#{array[1]}"] && board["#{array[1]}"] == board["#{array[2]}"])
+    if (board[array[0]] == board[array[1]] && board[array[1]] == board[array[2]])
       return array
     end
   end
@@ -47,3 +47,6 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+  return board()
